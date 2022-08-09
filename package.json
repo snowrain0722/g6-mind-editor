@@ -23,6 +23,7 @@
     "@ant-design/pro-form": "^1.72.0",
     "@ant-design/pro-layout": "^6.5.0",
     "@antv/g6": "^4.6.17",
+    "@antv/x6-react-components": "^1.1.15",
     "@types/lodash": "^4.14.182",
     "@umijs/plugin-sass": "^1.1.1",
     "classnames": "^2.3.1",

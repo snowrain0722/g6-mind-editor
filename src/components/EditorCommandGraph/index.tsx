@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+/* import { useState, useEffect, useRef } from 'react';
 import G6 from '@/components/EditorCommandRegister';
 import classnames from 'classnames'
 import { useStores, observer } from '@/utils/mobx';
@@ -292,4 +292,33 @@ function Index(props) {
   )
 };
 
-export default Index;
+export default Index; */
+import G6 from '../Registers';
+import classnames from 'classnames';
+import { useStores } from '@/utils/mobx';
+import { useState, useEffect, useRef } from 'react';
+import { cloneDeep } from 'lodash';
+import { Input, Card, message } from 'antd';
+import EditorCommandToolbar from '../EditorCommandToolbar';
+import styles from './index.module.scss';
+
+export default function Index() {
+
+  useEffect(() => {
+    // 初始化
+  }, []);
+
+  return (
+    <div className={styles.mind}>
+      <div className={styles.toolbar}>
+        <EditorCommandToolbar />
+      </div>
+      <div className={styles.content}>
+        <div className={styles.container}></div>
+        <Card size="small" title="缩略图" bordered={false}>
+          <div id="miniMap" />
+        </Card>
+      </div>
+    </div>
+  )
+}
